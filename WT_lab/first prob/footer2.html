@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html>
+    <head>
+        <style>
+        blink {
+            color: #2d38be;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        </style>
+    </head>  
+ <body>
+    <body onload="blinker();">
+    <div style="background-color: rgb(212, 182, 199);" id="blink"><h3>Blinking<BR /> </div>
+      
+   
+    <script>
+        function blinker()
+        {
+          if(document.getElementById("blink"))
+          {
+              var d = document.getElementById("blink") ;
+              d.style.color= (d.style.color=='blue'?'white':'blue');
+              setTimeout('blinker()', 900);
+          }
+      }
+    </script>
+</body>
+</html>
